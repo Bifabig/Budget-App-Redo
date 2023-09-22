@@ -68,7 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- <a href="https://budget-app-biftu.onrender.com/">Budget App Live</a>
+- <a href="https://budget-app-redo.onrender.com/">Budget App Live</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
