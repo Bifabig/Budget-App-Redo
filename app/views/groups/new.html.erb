@@ -1,0 +1,31 @@
+<div class="account-pg">
+  <div class="nav-menu">
+    <div>
+      <a href="/"  class="back-btn"> 
+        <span class="material-symbols-outlined">
+          arrow_back
+        </span> 
+      </a>
+    </div>
+    <h2>ADD NEW CATEGORY</h2>
+    <span></span>
+  </div>
+
+  <div class="field-wrapper-cat">
+    <%= form_with(model: @group, html: { class: "form-two" }) do |form| %>
+      <div class="field">
+        <%= form.text_field :name, placeholder: "Name", class: "form-control" %>
+      </div>
+      
+      <div class="field">
+        <%= form.file_field :icon, accept: "image/png, image/jpeg, image/jpg",
+        class: "form-control" %>
+      </div>
+      
+      <div class="sub">
+        <%= form.submit class: "sub-btn" %>
+      </div>
+        
+    <% end %>
+  </div>
+</div>

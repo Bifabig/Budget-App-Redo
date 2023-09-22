@@ -7,10 +7,25 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <%= yield %>
+  <main class="main">
+  <%= yield %>
+
+  <% if notice %>
+    <p class=""><%= notice %></p>
+  <% end %>
+
+  <% if alert %>
+    <p class=""><%= alert %></p>
+  <% end %>
+
+  <% if flash[:error] %>
+    <p class=""><%= flash[:error] %></p>
+  <% end %>
+</main>
   </body>
 </html>

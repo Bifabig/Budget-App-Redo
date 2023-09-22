@@ -1,0 +1,12 @@
+<div class="account-pg">
+  <div class="nav-menu">
+    <span class="material-symbols-outlined">
+      menu
+    </span>
+    <h2>CATEGORIES</h2>
+    <%= link_to "New", new_group_path, class: "submit-btn" %>
+  </div>
+  <div>
+    <%= render partial: "group", collection: @groups, as: :group %>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="cards">
+  <p class="entity-name"><%= entity.name %></p>
+  <div>
+    <p class="entity-amount"><%= number_to_currency(entity.amount) %></p>
+    <p class="entity-time"><%= entity.created_at.strftime("%B%e, %Y %l:%M%p") %></p>
+  </div>
+</div>
