@@ -1,15 +1,271 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  background-color: #fff;
+}
+
+.splash-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+  height: 100vh;
+}
+
+.logo {
+  font-size: 36px;
+  margin-top: auto;
+}
+
+.main-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  font-size: larger;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-btn {
+  background-color: #3778c2;
+  color: white;
+  padding: 20px 20px;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.signup-btn {
+  color: grey;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.login-page {
+  background-color: #f9f9f9;
+  text-align: center;
+  color: #fff;
+  height: 94.4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-menu {
+  background-color: #3778c2;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  color: white;
+}
+
+.submit-btn {
+  background-color: #3778c2;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: lighter;
+  margin-left: -20px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.back-btn {
+  color: white !important;
+  text-decoration: none;
+}
+
+.field-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-top: 1px solid grey;
+}
+
+.field-wrapper-cat {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-top: 1px solid grey;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.field input {
+  font-family: inherit;
+  font-size: larger;
+  width: 90%;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid grey;
+  color: grey;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.field input::placeholder {
+  color: grey;
+}
+
+.forgot-pass {
+  font-size: large;
+  margin-top: 10px;
+  text-decoration: none;
+  color: grey;
+}
+
+.account-pg {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  background-color: #d6d6d6;
+  height: 100vh;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  text-decoration: none;
+  color: grey;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 20px 40px;
+  padding: 20px;
+}
+
+.category-gap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-info {
+  display: flex;
+}
+
+.group-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.group-amount {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: end;
+  font-size: 25px;
+}
+
+.amount-num {
+  font-weight: 600;
+  color: #454545;
+}
+
+.item-date {
+  font-size: small;
+  margin-top: 15px;
+}
+
+.img-icon {
+  width: 25%;
+}
+
+.trans {
+  margin-top: 20px;
+  margin-left: 40%;
+}
+
+.cards {
+  display: flex;
+  font-size: larger;
+  font-weight: bold;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #edf0f4;
+  margin: 20px 40px;
+}
+
+.entity-name {
+  font-size: larger;
+  font-weight: bold;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.entity-amount {
+  background-color: #edf0f4;
+  font-size: larger;
+  font-weight: bold;
+  padding: 20px;
+  margin: 0 40px;
+  text-align: end;
+}
+
+.entity-time {
+  background-color: #edf0f4;
+  font-size: small;
+  font-weight: bold;
+  padding: 20px;
+  margin: 0 40px;
+  text-align: end;
+}
+
+.form-two {
+  margin-top: 20px;
+  padding: 0 20px;
+  width: 40rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.sub-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #3778c2;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+}
+
+.sub-btn:hover {
+  background-color: #fff;
+  color: #3778c2;
+  border: 2px solid #3778c2;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}

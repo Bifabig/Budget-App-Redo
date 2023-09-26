@@ -1,0 +1,25 @@
+<div class="account-pg">
+  <div class="nav-menu">
+    <div>
+      <a href="/"  class="back-btn"> 
+        <span class="material-symbols-outlined">
+          arrow_back
+        </span> 
+      </a>
+    </div>
+    <h2>CATEGORY: <%= @group.name %></h2>
+    <%= button_to "Add Transaction", new_group_entity_path(@group),
+      method: :get, class: "submit-btn" %>
+  </div>
+  
+  <div>
+    <%= render partial: "transaction",
+    collection: @group.entities.order(created_at: :desc),
+    as: :entity %>
+  </div>
+
+  <div class="entity-amount">
+      TOTAL PAYMENT: <%= number_to_currency(@group.entities.sum(:amount)) %>
+  </div>
+ 
+</div>

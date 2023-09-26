@@ -1,0 +1,19 @@
+<a href="<%= group_path(group) %>" class="category-list">
+  <div class="category-gap">
+    <div class="category-info">
+      
+        <%= image_tag group.icon, class: "img-icon" %>
+      
+      <div class="group-name">
+        <%= group.name %>
+        <div class="item-date">
+          <%= group.created_at.to_date %>
+        </div>
+      </div>
+    </div>
+
+    <div class="group-amount">
+      <p class="amount-num"><%= number_to_currency(group.entities.sum(:amount)) %></p>
+    </div>
+  </div>
+</a>
